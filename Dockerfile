@@ -19,5 +19,3 @@ EXPOSE 8100 35729
 RUN chown -R node:node /usr/app/
 USER node
 
-# install dependencies in json
-RUN npm cache clean --force && npm install -y

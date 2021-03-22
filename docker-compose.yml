@@ -10,8 +10,8 @@ services:
       - 35729:35729
     volumes:
       - ./app:/usr/app
-      # - /usr/app/node_modules # to not share node_modules
-    command: ionic serve --external
+
+    command: ash -c "npm install -y && ionic serve --external" # For DEV 
 
 
 
